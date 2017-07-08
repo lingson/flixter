@@ -7,16 +7,16 @@
       <%= link_to course.title, course_path(course) %>
     </h3>
     <br />
-    <%= image_tag course.image, class: 'img-fluid' %>
+    <%= image_tag course.image, class: 'img-fluid pics' %>
     <br />
-    <div class="row">
-      <div class="col-12 col-sm-8">
+    <br />
         <%= course.description %>
-      </div>
-      <div class="col-12 col-sm-4 text-center">
-        <%= link_to "More Info...", course_path(course), class: 'btn btn-lg btn-primary' %>
-      </div>
-    </div>
+
+    <br />
+    <br />
+
+        <%= link_to "More Info...", course_path(course), class: 'btn btn-primary' %>
+
 
     <hr class="col-8 offset-2">
     <br class="clr" />
@@ -29,18 +29,20 @@
     </h3>
 
     <br />
-  <%= image_tag course.image, class: 'img-fluid' %>
+  <%= image_tag course.image, class: 'img-fluid pics' %>
   <br />
-  <div class="row">
+  <br />
+
     <div class="col-12 col-sm-8">
       <%= course.description %>
     </div>
-    <div class="col-12 col-sm-4 text-center">
-      <%= link_to "More Info...", course_path(course), class: 'btn btn-lg btn-primary' %>
-    </div>
-  </div>
+    <br />
+      <%= link_to "More Info...", course_path(course), class: 'btn btn-primary' %>
+    
+
 
   <hr class="col-8 offset-2">
     <br class="clr" />
   <% end %>
+
 </div>
